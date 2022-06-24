@@ -75,4 +75,5 @@ document.querySelector('.new_btn').addEventListener('click',function(){
     document.querySelector(`.player2_box`).classList.remove('winner');
         document.querySelector(`.player2_title`).style.color='black';
         startgame();
+    
 });
