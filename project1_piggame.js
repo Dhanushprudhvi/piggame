@@ -52,7 +52,7 @@ document.querySelector('.hold_btn').addEventListener('click',function(){
     document.querySelector(`.player${active}_curr_value`).textContent=0;
     document.querySelector('.player1_box').classList.toggle('active');
     document.querySelector('.player2_box').classList.toggle('active');
-    if(players[active-1]>=20)
+    if(players[active-1]>=100)
     {
         //display winner if active players score>=100;
         document.querySelector('.player1_box').classList.remove('active');
