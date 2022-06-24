@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+  overflow: hidden;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right top,rgb(103, 12, 62),rgb(47, 115, 142));
+}
+.players {
+  display: flex;
+  position: relative;
+  box-shadow: 5px 5px 20px  rgb(81, 57, 57);
+  /* -5px -5px 50px rgb(193, 99, 99); */
+}
+.player1_box,
+.player2_box {
+  width: 470px;
+  height: 560px;
+  text-align: center;
+}
+.player1_box {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.player2_box {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color:  rgba(255, 255, 255, 0.6);
+}
+.player1_top,
+.player2_top {
+  height: 50%;
+}
+.player1_bottom,
+.player2_bottom {
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player1_title,
+.player2_title {
+  margin: 70px 0px 30px;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+}
+.player1_score,
+.player2_score {
+  font-size: 5rem;
+}
+.player1_curr_box,
+.player2_curr_box {
+  width: 170px;
+  height: 100px;
+
+  background-color: rgb(174, 22, 67);
+  border-radius: 10px;
+}
+.dice{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%,-50%);
+    top:40%;
+    left:50%;
+}
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.7);
+  font-size: 1.5rem;
+}
+.new_btn {
+  top: 50px;
+}
+.roll_btn {
+  bottom: 150px;
+}
+.hold_btn {
+  bottom: 100px;
+}
+.active{
+    background-color: rgb(224, 91, 146);
+}
+.current{
+    font-size: 1.6rem;
+    color: white;
+    margin: 15px 0 5px;
+}
+.player1_curr_value,.player2_curr_value{
+      font-size: 3rem;
+      color: white;
+}
+.hidden{
+    display: none;
+}
+.winner{
+    background-color: rgb(0, 0, 0);
+}
